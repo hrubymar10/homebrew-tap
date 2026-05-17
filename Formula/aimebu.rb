@@ -19,14 +19,13 @@ class Aimebu < Formula
     working_dir var
     log_path var/"log/aimebu.log"
     error_log_path var/"log/aimebu.log"
-    environment_variables AIMEBU_DATA: var/"lib/aimebu", AIMEBU_BIND: "127.0.0.1"
   end
 
   test do
     port = free_port
     pid = fork do
       ENV["AIMEBU_PORT"] = port.to_s
-      ENV["AIMEBU_DATA"] = testpath.to_s
+      ENV["AIMEBU_CONFIG_DIR"] = testpath.to_s
       exec bin/"aimebu", "server", "serve"
     end
     sleep 2
