@@ -1,8 +1,8 @@
 class AwsAiProxy < Formula
   desc "Host-side loopback AWS credential proxy for AI docker sandboxes"
   homepage "https://github.com/hrubymar10/aws-ai-proxy"
-  url "https://github.com/hrubymar10/aws-ai-proxy/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "036ab2dab3b7c3094e335b6f225ffddee7505a9ef9dcfed7c15000e94a86ae6b"
+  url "https://github.com/hrubymar10/aws-ai-proxy/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "496dd4a99a422573b6eb875c24de62291580ab0ad9391614d924a8af92836d22"
   license "MIT"
   head "https://github.com/hrubymar10/aws-ai-proxy.git", branch: "master"
 
